@@ -26,6 +26,11 @@ class Settings(BaseSettings):
     # Stream Token Settings
     STREAM_TOKEN_SECRET: str = "CHANGE_ME_STREAM_TOKEN_SECRET_MIN_32_CHARS"
     
+    # Redis Settings
+    REDIS_URL: str = "redis://localhost:6379/0"
+    REDIS_MAX_CONNECTIONS: int = 10
+    REDIS_SOCKET_TIMEOUT: int = 5
+    
     # Media Server Settings
     JELLYFIN_URL: str = ""
     JELLYFIN_API_KEY: str = ""
@@ -43,6 +48,12 @@ class Settings(BaseSettings):
     BASIC_MAX_STREAMS: int = 2
     PREMIUM_MAX_STREAMS: int = 3
     FAMILY_MAX_STREAMS: int = 5
+    
+    # Quota Settings
+    FREE_MONTHLY_QUOTA_GB: int = 10  # 10GB per month for free tier
+    BASIC_MONTHLY_QUOTA_GB: int = 50  # 50GB per month for basic tier
+    PREMIUM_MONTHLY_QUOTA_GB: int = 200  # 200GB per month for premium
+    FAMILY_MONTHLY_QUOTA_GB: int = 500  # 500GB per month for family
     
     class Config:
         env_file = ".env"

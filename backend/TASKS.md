@@ -64,21 +64,21 @@
 
 ### 2.3 Redis Quota Enforcement
 
-- [ ] Set up Redis connection in [`app/core/config.py`](app/core/config.py)
-- [ ] Design quota key structure: `stream:{user_id}:{month}`
-- [ ] Implement monthly quota counter
-- [ ] Add TTL management aligned with calendar month
-- [ ] Create quota check middleware
-- [ ] Implement quota consumption logic
-- [ ] Add quota reset handling
+- [x] Set up Redis connection in [`app/core/config.py`](app/core/config.py)
+- [x] Design quota key structure: `stream:{user_id}:{month}`
+- [x] Implement monthly quota counter
+- [x] Add TTL management aligned with calendar month
+- [x] Create quota check middleware
+- [x] Implement quota consumption logic
+- [x] Add quota reset handling
 
 ### 2.4 Player UI Backend
 
-- [ ] Create stream playback endpoints
-- [ ] Implement media transcoding request handling
-- [ ] Add playlist generation (HLS/DASH)
-- [ ] Build stream session management
-- [ ] Implement pause/resume functionality
+- [x] Create stream playback endpoints
+- [x] Implement media transcoding request handling
+- [x] Add playlist generation (HLS/DASH)
+- [x] Build stream session management
+- [x] Implement pause/resume functionality
 
 ---
 
