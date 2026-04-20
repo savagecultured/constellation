@@ -23,6 +23,18 @@ class Settings(BaseSettings):
     # Security
     BCRYPT_ROUNDS: int = 12
     
+    # Media Server Settings
+    JELLYFIN_URL: str = ""
+    JELLYFIN_API_KEY: str = ""
+    JELLYFIN_DEVICE_ID: str = "constellation-streaming"
+    
+    NAVIDROME_URL: str = ""
+    NAVIDROME_API_KEY: str = ""
+    
+    MEDIA_SERVER_TIMEOUT: float = 30.0
+    MEDIA_SERVER_RETRY_ATTEMPTS: int = 3
+    MEDIA_SERVER_RETRY_DELAY: float = 1.0
+    
     class Config:
         env_file = ".env"
         case_sensitive = True

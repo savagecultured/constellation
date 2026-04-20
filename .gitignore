@@ -58,6 +58,7 @@ coverage.xml
 htmlcov/
 .tox/
 nosetests.xml
+stellation
 
 # ==========================================
 # Type Checking (MyPy/Pyright)

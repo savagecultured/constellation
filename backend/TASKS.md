@@ -24,20 +24,20 @@
 
 ### 1.3 Admin Baseline
 
-- [ ] Create user management endpoints in [`app/api/v1/admin.py`](app/api/v1/admin.py)
-- [ ] Implement user CRUD operations
-- [ ] Add admin authentication middleware
-- [ ] Create user search/filter functionality
-- [ ] Build admin dashboard data endpoints
+- [x] Create user management endpoints in [`app/api/v1/admin.py`](app/api/v1/admin.py)
+- [x] Implement user CRUD operations
+- [x] Add admin authentication middleware
+- [x] Create user search/filter functionality
+- [x] Build admin dashboard data endpoints
 
 ### 1.4 CI/CD Pipeline
 
-- [ ] Set up GitHub Actions workflow in `.github/`
-- [ ] Configure automated testing
-- [ ] Add linting (flake8/ruff)
-- [ ] Set up type checking (mypy)
-- [ ] Configure Docker build automation
-- [ ] Set up automated deployment triggers
+- [x] Set up GitHub Actions workflow in `.github/`
+- [x] Configure automated testing
+- [x] Add linting (flake8/ruff)
+- [x] Set up type checking (mypy)
+- [x] Configure Docker build automation
+- [x] Set up automated deployment triggers
 
 ---
 
@@ -45,12 +45,12 @@
 
 ### 2.1 Media Server Integration
 
-- [ ] Create Jellyfin API client wrapper
-- [ ] Create Navidrome API client wrapper
-- [ ] Implement media libraryfetch endpoints
-- [ ] Add media search functionality
-- [ ] Set up media metadata sync job
-- [ ] Configure API timeout handling
+- [x] Create Jellyfin API client wrapper
+- [x] Create Navidrome API client wrapper
+- [x] Implement media library fetch endpoints
+- [x] Add media search functionality
+- [x] Set up media metadata sync job
+- [x] Configure API timeout handling
 
 ### 2.2 Stream Proxy (Critical Path)
 
