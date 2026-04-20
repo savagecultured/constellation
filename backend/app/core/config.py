@@ -23,6 +23,9 @@ class Settings(BaseSettings):
     # Security
     BCRYPT_ROUNDS: int = 12
     
+    # Stream Token Settings
+    STREAM_TOKEN_SECRET: str = "CHANGE_ME_STREAM_TOKEN_SECRET_MIN_32_CHARS"
+    
     # Media Server Settings
     JELLYFIN_URL: str = ""
     JELLYFIN_API_KEY: str = ""
@@ -34,6 +37,12 @@ class Settings(BaseSettings):
     MEDIA_SERVER_TIMEOUT: float = 30.0
     MEDIA_SERVER_RETRY_ATTEMPTS: int = 3
     MEDIA_SERVER_RETRY_DELAY: float = 1.0
+    
+    # Subscription Tier Limits
+    FREE_MAX_STREAMS: int = 1
+    BASIC_MAX_STREAMS: int = 2
+    PREMIUM_MAX_STREAMS: int = 3
+    FAMILY_MAX_STREAMS: int = 5
     
     class Config:
         env_file = ".env"

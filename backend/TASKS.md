@@ -54,13 +54,13 @@
 
 ### 2.2 Stream Proxy (Critical Path)
 
-- [ ] Design stream proxy architecture
-- [ ] Implement subscription tier validation
-- [ ] Add concurrent stream limit enforcement
-- [ ] Create short-lived signed token generator (≤60s expiry)
-- [ ] Build traffic routing logic to Jellyfin/Navidrome
-- [ ] Implement token validation middleware
-- [ ] Add stream analytics tracking
+- [x] Design stream proxy architecture
+- [x] Implement subscription tier validation
+- [x] Add concurrent stream limit enforcement
+- [x] Create short-lived signed token generator (≤60s expiry)
+- [x] Build traffic routing logic to Jellyfin/Navidrome
+- [x] Implement token validation middleware
+- [x] Add stream analytics tracking
 
 ### 2.3 Redis Quota Enforcement
 
